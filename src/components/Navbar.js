@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import logo from '../logo.png'
+import logo from '../images/logo.png'
 
 export default function Navbar() {
     const handleNavToggle = () => {
@@ -11,7 +11,9 @@ export default function Navbar() {
         <nav className="nav-center">
             {/* <!-- nav header --> */}
             <div className="nav-header">
-                <img src={logo} alt="" />
+                <a href="index.html">
+                    <img src={logo} alt="" />
+                </a>
                 <button className="nav-toggle" onClick={handleNavToggle}>
                     <i className="fas fa-bars"></i>
                 </button>
