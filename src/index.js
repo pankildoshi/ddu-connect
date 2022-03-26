@@ -11,7 +11,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const toplink = document.querySelector('.top-link');
+  window.addEventListener('scroll', function(){
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > 500){
+        toplink.classList.add('show-link');
+    } else {
+        toplink.classList.remove('show-link');
+    }
+  });
+
 reportWebVitals();

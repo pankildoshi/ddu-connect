@@ -1,6 +1,5 @@
 import React from 'react'
 import articleBanner from '../images/article-banner.png'
-import '../App.css';
 
 export default function Article() {
     return (
