@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
             <hr />
             <br />
-        <p>&copy; 2021 DDU Connect, All rights recieved</p>
+        <p>&copy; 2022 DDU Connect, All rights recieved</p>
     </footer>
     )
 }

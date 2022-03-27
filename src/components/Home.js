@@ -7,6 +7,8 @@ export default function Home() {
         <>
             {/* main banner */}
             <div className="banner">
+                <h1>DDU CONNECT</h1>
+                <h2>REDEFINING CONVENTIONS</h2>
             </div>
             {/* articles */}
             <div className="wrapper">
@@ -27,7 +29,7 @@ export default function Home() {
             </div>
             {/* editor banner */}
             <div className="banner-editor">
-            <div className='text'>
+                <h1>From the <span>editor's</span> desk</h1>
                 <p>
                 “Kintsugi or Kintsukuroi (“golden joinery”) is the centuries-old Japanese art of putting broken pottery pieces back together with golden adhesive that enhances the break lines, thus making the piece unique.” Having scars or being broken isn’t shameful. When we embrace the beauty of improving imperfections, we create an even stronger, resilient, and the most stunning version of ourselves. Acceptance and Improvisation is the art everyone must master. Life is going to be tough and you might fall, but the beauty is in standing up and never giving up.
                 </p>
@@ -38,7 +40,6 @@ export default function Home() {
                 Muskan Vora <br />
                 Editor-in-Chief
                 </p>
-            </div>
             </div>   
         </>
     )
