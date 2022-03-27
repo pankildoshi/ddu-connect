@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const handleNavToggle = () => {
@@ -10,9 +11,9 @@ export default function Navbar() {
         <nav className="nav-center">
             {/* <!-- nav header --> */}
             <div className="nav-header">
-                <a href="index.html">
+                <Link to="/">
                     <img src={logo} alt="" />
-                </a>
+                </Link>
                 <button className="nav-toggle" onClick={handleNavToggle}>
                     <i className="fas fa-bars"></i>
                 </button>
@@ -20,31 +21,31 @@ export default function Navbar() {
             {/* <!-- links --> */}
             <ul className="links">
                 <li>
-                <a href="index.html">home</a>
+                <Link exact to="/">Home</Link>
                 </li>
                 <li>
-                <a href="about.html">buzz</a>
+                <Link exact to="/buzz">Buzz</Link>
                 </li>
                 <li>
-                <a href="projects.html">events</a>
+                <Link to="/">events</Link>
                 </li>
                 <li>
-                <a href="contact.html">tech</a>
+                <Link to="/">tech</Link>
                 </li>
                 <li>
-                <a href="contact.html">non-tech</a>
+                <Link to="/">non-tech</Link>
                 </li>
                 <li>
-                <a href="contact.html">gallery</a>
+                <Link to="/">gallery</Link>
                 </li>
                 <li>
-                <a href="contact.html">about</a>
+                <Link to="/">about</Link>
                 </li>
                 <li>
-                <a href="contact.html">more content</a>
+                <Link to="/">more content</Link>
                 </li>
                 <li>
-                <a href="contact.html">આપણી ગુજરાતી, આપણું ગૌરવ</a>
+                <Link to="/">આપણી ગુજરાતી, આપણું ગૌરવ</Link>
                 </li>              
             </ul>
         </nav>
